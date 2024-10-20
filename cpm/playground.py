@@ -1,10 +1,8 @@
 from data import Data
-from lab_cpm import find_critical_path_fixed
+from lab_cpm import CriticalPath
 
 
 task_data = Data("data.txt")
-# Find the corrected critical path for the graph
-print(task_data)
-critical_path_fixed, path_length_fixed = find_critical_path_fixed(task_data.full_graph)
+dto = CriticalPath.critical_path(task_data)
 
-print(critical_path_fixed, path_length_fixed)
+print(dto)

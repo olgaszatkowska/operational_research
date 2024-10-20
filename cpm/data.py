@@ -38,9 +38,9 @@ class Data:
 
                     self.vertexes = set(all_vertexes)
                     self.full_graph = {}
-                    
+
                     for vertex in self.vertexes:
-                        if dependables:=self.graph.get(vertex):
+                        if dependables := self.graph.get(vertex):
                             self.full_graph[vertex] = dependables
                         else:
                             self.full_graph[vertex] = []
